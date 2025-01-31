@@ -37,6 +37,7 @@ I think this problem is not necesseraly NP-hard, as in, it should be possible to
 - Wave function collapse : it's primarly used to procedurally generate 2d or 3d maps in video games and it might be useful here as there is ways to parallelize this algorithm. I don't expect the result from this to be good, but it should be a good exercise
 - Use a constraint optimization solver tool like Google OR-Tools
 - Custom heuristics <- this is what i think "will win" because the problem will need to be scalable
+- algorithms involved adjacency lists could maybe be a good one
 ## Current ideas for volume optimization
 it is unclear how likely it is to fall into a local minima/maxima, this might be an NP-hard problem that might be solved easier with a quantum computer
 - heuristics on the 3d models -> create a sets of rules that hold true in all cases and slowly develop that ruleset
