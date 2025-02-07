@@ -6,6 +6,8 @@ develop an environment which makes it easy to develop heuristics to convert PyZX
 
 develop an environment for researchers trying to make 3d lattice surgery without relying on proprietary technology like SketchUp
 
+The general idea being, by developping a tool and the routing algorithm at the same time, some options/tools/"brush" will probably become obvious to have to implement in order to make it easier to make 3d lattice. Some of those "brushes" will probably endup being quite complex to implement by themselves. Once made, they will probably be useful to automate the whole process.  
+
 see tqec tool repo for more context https://github.com/tqec/tqec
 
 
