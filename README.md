@@ -6,7 +6,7 @@ develop an environment which makes it easy to develop heuristics to convert PyZX
 
 develop an environment for researchers trying to make 3d lattice surgery without relying on proprietary technology like SketchUp
 
-the reason we need a custom 3d tool instead of using sketchup is that having full control over the 3d environment makes it easier to experiment for different algorithms
+The general idea being, by developping a tool and the routing algorithm at the same time, some options/tools/"brush" will probably become obvious to have to implement in order to make it easier to make 3d lattice. Some of those "brushes" will probably endup being quite complex to implement by themselves. Once made, they will probably be useful to automate the whole process.  
 
 see tqec tool repo for more context https://github.com/tqec/tqec
 
@@ -40,6 +40,7 @@ I think this problem is not necesseraly NP-hard, as in, it should be possible to
 - Wave function collapse : it's primarly used to procedurally generate 2d or 3d maps in video games and it might be useful here as there is ways to parallelize this algorithm. I don't expect the result from this to be good, but it should be a good exercise
 - Use a constraint optimization solver tool like Google OR-Tools
 - Custom heuristics <- this is what i think "will win" because the problem will need to be scalable
+- algorithms involved adjacency lists could maybe be a good one
 - It might be worth looking into FPGAs routing algorithms and PCB autorouting algorithms
 
 ## Current ideas for volume optimization
