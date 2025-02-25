@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://coen3ma7t8w8k"]
+
+[ext_resource type="Script" uid="uid://bw3npi7r8gaek" path="res://scenes/scripts/pyzxparser.gd" id="1_o5qli"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_o5qli")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3.99149)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -424.978, 0)
