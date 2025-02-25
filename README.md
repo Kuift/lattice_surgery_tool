@@ -6,6 +6,8 @@ develop an environment which makes it easy to develop heuristics to convert PyZX
 
 develop an environment for researchers trying to make 3d lattice surgery without relying on proprietary technology like SketchUp
 
+the reason we need a custom 3d tool instead of using sketchup is that having full control over the 3d environment makes it easier to experiment for different algorithms
+
 see tqec tool repo for more context https://github.com/tqec/tqec
 
 
@@ -21,22 +23,25 @@ It should validate the structure based on some rules (e.g., no overlaps, valid c
 
 It should be able to export to a blockgraph file for integration with TQEC.
 
-It should be easy to develop some heuristic code and load it into the tool so that a lots of people can quickly try their ideas.
+It should be easy to develop some heuristic code and load it into the tool so multiple people can quickly try their ideas.
 
 ### Todo
 - create a simple Block Placement System
   - Add the five block presets (as predefined 3D meshes or instanced scenes)
   - Drag and snap on a grid by using GridMap (or maybe use custom coords)
-- export to BlockGraph file 
-  - define a fileformat for blockgraph files
+- Export to BlockGraph file 
+  - Define a fileformat for blockgraph files -> currently i'm thinking of directly generating python code that gives you the BlockGraph object directly
 - Add importer to visualize TQEC files in the tool
 - Rule validation (e.g., constraints for 3D lattice surgery, could maybe be done with the tqec tool directly ? ie send request to a local server running the tqec tool, run code to see if it validate, return output to godot)
+- No color mode : have the color be painted after having made the 3d shape
 
 ## Current ideas to try to do the PyXZ to lattice surgery conversion
 I think this problem is not necesseraly NP-hard, as in, it should be possible to generate 3d shape from PyZX graphs, but the quality of those graphs (ie, it might need 10x more qubits than a human optimized structure) will be the hard part
 - Wave function collapse : it's primarly used to procedurally generate 2d or 3d maps in video games and it might be useful here as there is ways to parallelize this algorithm. I don't expect the result from this to be good, but it should be a good exercise
 - Use a constraint optimization solver tool like Google OR-Tools
 - Custom heuristics <- this is what i think "will win" because the problem will need to be scalable
+- It might be worth looking into FPGAs routing algorithms and PCB autorouting algorithms
+
 ## Current ideas for volume optimization
 it is unclear how likely it is to fall into a local minima/maxima, this might be an NP-hard problem that might be solved easier with a quantum computer
 - heuristics on the 3d models -> create a sets of rules that hold true in all cases and slowly develop that ruleset
