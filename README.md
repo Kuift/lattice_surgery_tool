@@ -44,7 +44,7 @@ I think this problem is not necesseraly NP-hard, as in, it should be possible to
 - It might be worth looking into FPGAs routing algorithms and PCB autorouting algorithms
 
 ## Current ideas for volume optimization
-it is unclear how likely it is to fall into a local minima/maxima, this might be an NP-hard problem that might be solved easier with a quantum computer
+it is unclear how likely it is to fall into a local minima/maxima, this might be an NP-hard problem
 - heuristics on the 3d models -> create a sets of rules that hold true in all cases and slowly develop that ruleset
 - using machine learning by using data generated from the use of this tool
 - heuristics on the BlockGraph model directly
