@@ -40,7 +40,7 @@ I think this problem is not necesseraly NP-hard, as in, it should be possible to
 - Wave function collapse : it's primarly used to procedurally generate 2d or 3d maps in video games and it might be useful here as there is ways to parallelize this algorithm. I don't expect the result from this to be good, but it should be a good exercise
 - Use a constraint optimization solver tool like Google OR-Tools
 - Custom heuristics <- this is what i think "will win" because the problem will need to be scalable
-- algorithms involved adjacency lists could maybe be a good one
+- algorithms involving adjacency lists could be a path worthwhile to explore
 - It might be worth looking into FPGAs routing algorithms and PCB autorouting algorithms
 
 ## Current ideas for volume optimization
